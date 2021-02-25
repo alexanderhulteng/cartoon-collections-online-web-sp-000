@@ -33,6 +33,7 @@ def long_planeteer_calls(calls_long)
 
 if  calls_long.all? do |number|
     number.length <= 4
+    puts number
   end
     return false
   end
