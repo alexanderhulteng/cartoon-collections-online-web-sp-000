@@ -32,7 +32,7 @@ def long_planeteer_calls(calls_long)
   end
 
 if  calls_long.all? do |number|
-    number.length <= 4
+    number.length <= 65
   end
     return false
   end
