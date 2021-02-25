@@ -33,7 +33,6 @@ def long_planeteer_calls(calls_long)
 
 if  calls_long.all? do |number|
     number.length <= 4
-    puts number
   end
     return false
   end
@@ -41,7 +40,7 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  food.detect{|i| i.include?(cheese_types[i])}
+
 
 
 
@@ -50,3 +49,4 @@ def find_the_cheese(food)
 
 
 end
+#food.detect{|i| i.include?(cheese_types[i])}
