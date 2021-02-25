@@ -1,16 +1,38 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+calls_long = ["Doc", "Dopey", "Bashful", "Grumpy"]
+
+def roll_call_dwarves(dwarves)
+  i = 0
+  while i < dwarves.length
+    puts "#{i+1}. #{dwarves[i]}"
+    i += 1
+  end
+
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(summon_calls)
+  i = 0
+  summon_calls_2 = []
+  while i < summon_calls.length
+    summon_calls_2 << "#{summon_calls[i].capitalize}!"
+    i += 1
+  end
+  summon_calls_2
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls_long)
+
+
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  food.detect{|i| i.include?(cheese_types[i])}
+
+
+
+
+
+
+
 end
+# if cheese.any? {|cheese_types| cheese.include?(cheese_types) }
