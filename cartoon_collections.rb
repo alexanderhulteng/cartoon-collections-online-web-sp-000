@@ -21,19 +21,21 @@ end
 
 def long_planeteer_calls(calls_long)
   data_set = []
+
+
+
   calls_long.each do |length|
    if length.length > 4
-
      return true
      break
    end
-  data_set << length if length.length < 3
   end
-  if data_set == calls_long
+
+if  calls_long.all? do |number|
+    number <= 4
+  end
     return false
   end
-
-
 end
 
 def find_the_cheese(food)
