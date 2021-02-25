@@ -23,6 +23,7 @@ def long_planeteer_calls(calls_long)
   data_set = []
   calls_long.each do |length|
   data_set <<  if length < 4
+  end
   puts data_set
 
 
