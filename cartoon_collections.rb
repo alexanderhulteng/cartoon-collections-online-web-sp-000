@@ -24,7 +24,7 @@ def long_planeteer_calls(calls_long)
   calls_long.each do |length|
   data_set <<  if length < 4
   puts data_set
-      
+
 
 end
 
@@ -39,4 +39,3 @@ def find_the_cheese(food)
 
 
 end
-
