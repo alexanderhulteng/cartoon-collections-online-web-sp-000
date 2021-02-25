@@ -27,9 +27,11 @@ def long_planeteer_calls(calls_long)
      return true
      break
    end
-  data_set << length if length.length < 4
+  data_set << length if length.length < 3
   end
-  puts data_set
+  if data_set.length == calls_long.length
+    return false
+  end
 
 
 end
